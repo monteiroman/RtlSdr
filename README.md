@@ -5,3 +5,8 @@ install librtlsdr.so in Debian/Ubuntu
 install pyrtlsdr
 
 	pip install pyrtlsdr
+
+
+install gr-osmosdr
+
+	sudo apt install gr-osmosdr
