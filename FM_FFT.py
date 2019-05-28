@@ -15,7 +15,7 @@ if __name__ == '__main__':
             x11 = ctypes.cdll.LoadLibrary('libX11.so')
             x11.XInitThreads()
         except:
-            print "Warning: failed to XInitThreads()"
+            print ("Warning: failed to XInitThreads()")
 
 from gnuradio import analog
 from gnuradio import audio
