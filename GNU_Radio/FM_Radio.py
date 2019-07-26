@@ -3,7 +3,7 @@
 ##################################################
 # GNU Radio Python Flow Graph
 # Title: FM Radio
-# Generated: Tue May 28 09:19:07 2019
+# Generated: Sun Jul 21 20:10:47 2019
 ##################################################
 
 from distutils.version import StrictVersion
@@ -72,7 +72,7 @@ class FM_Radio(gr.top_block, Qt.QWidget):
         # Variables
         ##################################################
         self.width = width = 1e6
-        self.volume = volume = 1
+        self.volume = volume = 0.001
         self.seek = seek = 0
         self.sample = sample = 500e3
         self.samp_rate = samp_rate = 2e6
@@ -99,7 +99,7 @@ class FM_Radio(gr.top_block, Qt.QWidget):
         self.Tabs_grid_layout_0.addWidget(self._width_win, 2, 2, 1, 1)
         [self.Tabs_grid_layout_0.setRowStretch(r,1) for r in range(2,3)]
         [self.Tabs_grid_layout_0.setColumnStretch(c,1) for c in range(2,3)]
-        self._volume_range = Range(0.001, 10, 1, 1, 200)
+        self._volume_range = Range(0.001, 10, 0.01, 0.001, 200)
         self._volume_win = RangeWidget(self._volume_range, self.set_volume, 'volume', "counter_slider", float)
         self.Tabs_grid_layout_0.addWidget(self._volume_win, 4, 2, 1, 1)
         [self.Tabs_grid_layout_0.setRowStretch(r,1) for r in range(4,5)]
